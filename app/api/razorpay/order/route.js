@@ -19,7 +19,7 @@ export async function POST(req) {
       );
     }
 
-    // Lazy instantiation inside handler to avoid build-time initialization errors
+    // Instantiated strictly inside POST handler to prevent build-time evaluation errors
     const razorpay = new Razorpay({
       key_id: keyId,
       key_secret: keySecret,
@@ -36,7 +36,7 @@ export async function POST(req) {
     }
 
     const options = {
-      amount: Math.round(amount * 100), // Convert to smallest currency unit (paise)
+      amount: Math.round(amount * 100), // Amount in smallest currency unit (paise)
       currency,
       receipt: receipt || `receipt_${Date.now()}`,
     };
