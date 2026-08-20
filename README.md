@@ -1,4 +1,4 @@
-# TutorX AI: Next-Generation Engineering & Research Ecosystem 
+# TuTorX AI: Next-Generation Engineering & Research Ecosystem 
 
 **TutorX AI** is a state-of-the-art, production-grade AI-powered learning, code practice, and research platform. Designed with **LeetCode, Take U Forward (TUF), and HackerRank** standards, it bridges the gap between structured academic learning, deep document analysis (**NotebookLLM**), and hands-on algorithm training.
 
